@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- REMIXICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP ICON -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<!-- BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/style.css">
+	<title>ADMIN-TASK</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#"><img src="./assets/image/logo-head.png" class="ms-3 me-4" width="130px"></a>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="active" ><i class="ri-dashboard-line ms-3 me-4"></i> Dashboard
+				</a>
+			</li>
+	     	<li>
+				<a href="#" ><i class="bi bi-table ms-3 me-4"></i>Table  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="ri-arrow-down-s-line"></i></a>
+				<ul class="side-dropdown">
+					<li><a href="table.html">Basic</a></li>
+				</ul>
+				</li>
+				<li>
+					<a href="#" ><i class="ri-guide-line ms-3 me-4"></i>Maps  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <i class="ri-arrow-down-s-line"></i></a>
+					<ul class="side-dropdown">
+						<li><a href="map.html">Google Map</a></li>
+	
+						
+					</ul>
+			
+			<li><a href="#"><i class="ri-file-reduce-line ms-3 me-4"></i>Forms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="ri-arrow-down-s-line "></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./icon.html">Registration</a></li>
+					<li><a href="./icon.html">Feedback</a></li>
+					<li><a href="./icon.html">Rating</a></li>
+					
+				</ul></li>
+			<li><a href="#"><i class="ri-calendar-fill ms-3 me-4"></i>Calender</a></li>
+		
+			<li>
+				<a href="#" ><i class="ri-id-card-line ms-3 me-4"></i>Cards</a>
+				
+			</li>
+			<li>
+				<a href="#" ><i class="ri-donut-chart-fill ms-3 me-4"></i>Charts  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <i class="ri-arrow-down-s-line"></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Bar</a></li>
+					<li><a href="#">Pie</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#"><i class="ri-brush-ai-line ms-3 me-4"></i>UI Kits &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="ri-arrow-down-s-line "></i></a>
+				<ul class="side-dropdown">
+				<li><a href="./icon.html">Icon</a></li>
+				<li><a href="./typography.html">Typography</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Card</a></li>
+			</ul></li>
+		</ul>
+	</section>
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class="ri-menu-2-line toggle-sidebar"></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search here...">
+				</div>
+
+			</form><i class="ri-notification-3-line"></i>
+			<i class="ri-settings-3-line"></i>
+			<span class="divider"></span>
+			<div class="profile">
+			<img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png">	
+				<ul class="profile-link">
+					<li><a href="#"><i class="ri-user-line"></i>Profile</a></li>
+					<li><a href="#"><i class="ri-settings-line"></i> Settings</a></li>
+				
+					<li><a href="#"><i class="ri-git-repository-private-line"></i> Lock Profile</a></li>
+					<li><a href="#"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>		
+			<div class="container">
+				<div class="row chart-container">
+					<div class="col-6">
+						<div id="chart">
+							<h5>Year</h5>
+							<div id="apex-chart"></div>
+						  </div>
+					</div>
+
+					<div class="col-6">
+						<div class="content-data chart-container">
+							<script src="https://code.highcharts.com/highcharts.js"></script>
+							<script src="https://code.highcharts.com/modules/exporting.js"></script>
+							<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+							
+							<div id="container" style="max-width: 310px; height: 400px; max-width: 500px; margin: 0 auto"></div>
+					</div>
+
+				</div>
+			</div>	 
+			</div>
+			<div class="chart-row three mt-4">
+				<div class="chart-container-wrapper">
+				  <div class="chart-container">
+					<div class="chart-info-wrapper">
+					  <h2>Visitors</h2>
+					  <span>20.5 K</span>
+					</div>
+					<div class="chart-svg">
+					  <svg viewBox="0 0 36 36" class="circular-chart pink">
+				<path class="circle-bg" d="M18 2.0845
+					a 15.9155 15.9155 0 0 1 0 31.831
+					a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+				<path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+					a 15.9155 15.9155 0 0 1 0 31.831
+					a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+				<text x="18" y="20.35" class="percentage">30%</text>
+			  </svg>
+					</div>
+				  </div>
+				</div>
+				<div class="chart-container-wrapper">
+				  <div class="chart-container">
+					<div class="chart-info-wrapper">
+					  <h2>Subscribers</h2>
+					  <span>5.5 K</span>
+					</div>
+					<div class="chart-svg">
+					  <svg viewBox="0 0 36 36" class="circular-chart blue">
+				<path class="circle-bg" d="M18 2.0845
+					a 15.9155 15.9155 0 0 1 0 31.831
+					a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+				<path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+					a 15.9155 15.9155 0 0 1 0 31.831
+					a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+				<text x="18" y="20.35" class="percentage">60%</text>
+			  </svg>
+					</div>
+				  </div>
+				</div> 
+
+			
+				<div class="chart-container-wrapper">
+				  <div class="chart-container">
+					<div class="chart-info-wrapper">
+					  <h2>Sale</h2>
+					  <span>10.5 K</span>
+					</div>
+					 <div class="chart-svg">
+					  <svg viewBox="0 0 36 36" class="circular-chart orange">
+				<path class="circle-bg" d="M18 2.0845
+					a 15.9155 15.9155 0 0 1 0 31.831
+					a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+				<path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+					a 15.9155 15.9155 0 0 1 0 31.831
+					a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+				<text x="18" y="20.35" class="percentage">90%</text>
+			  </svg>
+					</div>
+				</div>
+				</div>
+			</div> 
+			<section class="mt-4 chart-container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1886830275844!2d72.93182687357353!3d20.944936580683443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7e5f66c0a35%3A0xf05084bad10b7748!2sRed%20%26%20White%20Multimedia%20Education%20-%20Navsari!5e0!3m2!1sen!2sin!4v1732862445946!5m2!1sen!2sin" width="100%" height="450" ></iframe>
+		</section>
+
+			</main>
+
+	
+	<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+	
+    <!-- JS -->
+	<script src="  https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	 <script src="./js/script.js"></script>
+	
+
+
+
+</body>
+</html>
